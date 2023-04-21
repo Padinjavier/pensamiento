@@ -1,0 +1,75 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+}
+#flipbook{
+    width: 100%;
+    height: 100vh;
+}
+.CARATULA {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.CARATULA figure{
+    width: 100px;
+    height: 100px;
+}
+.CARATULA img{
+width: 100%;
+height: 100%;
+}
+/* SEMANA 1 */
+.SEM1{
+    background: #f0c6aa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.SEM1 div{
+    width: 90%;
+    /* height: 200px; */
+    border: 5px solid #f39a7f;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+.SEM1 div p{
+    width: 90%;
+}
+
+.SEM1 div p:nth-child(1){
+    color: #17d164;
+    font-weight: bold;
+    font-family: cursive;
+}
+/* .SEM1 .title{
+    position: absolute;
+    top: 29px;
+    left: 9px;
+    font-size: 34px;
+    color: #17bbd1;
+    transform: rotate3d(1, 1, 1, 328deg);
+} */
+
+
+
+#flipbook .pg-3{
+    background: white;
+}
+#flipbook .pg-4{
+    background: white;
+}
