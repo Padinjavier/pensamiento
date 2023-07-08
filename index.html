@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,267 +8,143 @@
   <title>Document</title>
   <script src="./assets/js/aa.js"></script>
   <script src="./assets/js/turn.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 
+  
   <link rel="stylesheet" href="./assets/css/main.css">
-
   <script>
+    
     $(document).ready(function () {
       $("#flipbook").turn({
-        //   width: 1000,
-        //   height: 500,
+        width: 1000,
+        height: 625,
         autoCenter: true,
       });
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    // Obtén una referencia al botón y al elemento de la página
+    const fullscreenBtn = document.getElementById('fullscreenButton');
+    const pageElement = document.documentElement;
+  
+    // Manejador de evento de clic en el botón
+    fullscreenBtn.addEventListener('click', () => {
+      if (pageElement.requestFullscreen) {
+        pageElement.requestFullscreen();
+      } else if (pageElement.mozRequestFullScreen) {
+        pageElement.mozRequestFullScreen();
+      } else if (pageElement.webkitRequestFullscreen) {
+        pageElement.webkitRequestFullscreen();
+      } else if (pageElement.msRequestFullscreen) {
+        pageElement.msRequestFullscreen();
+      }
+    });
+  });
+
   </script>
 </head>
 
-<body>
+<body id="bodi">
   <div id="flipbook">
-    <div class="CARATULA">
-      <p>“Año de la unidad, la paz y el desarrollo”</h2>
-      <p>UNIVERSIDAD NACIONAL DE CAÑETE</p>
-      <p>ESCUELA PROFESIONAL DE INGENIERÍA</p>
-      <figure><img src="./assets/img/UNDC - copia.png" alt=""></figure>
-      <div>
-        <p>PARTICIPANTES: </p>
-      <p>HUASASQUICHE SOTO ALEX ANDRÉS</p>
-      <p>CHAMPE PALOMINO ANA GRABRIELA</p>
-      <p>LUYO CORREA JEANETTIS MARIEL</p>
-      <p>PADIN FLORES JAVIER ANTONIO</p>
-      </div>
-      <p>CICLO: VI</p>
-      <p>ASIGNATURA: PENSAMIENTO POLITICO CONTEMPORANEO</p>
-      <p>DOCENTE: ANA MARÍA PALOMINO CUETO</p>
-      <p>2023</p>
+    <div class="CARATULA" id="cara">
+      <img src="./assets/img/1.png" alt="">
     </div>
     <div class="pg-1 SEM1">
-      <div class="titulo">
-        <p>Marcos generales de la reflexión política</p>
-      </div>
-      <div>
-        <p>¿Por qué se afirma que fuera del grupo es difícil conservar y desarrollar la vida?</p>
-        <p>El hombre por naturaleza requiere vivir en sociedad, ya que no es autosuficiente y requiere ayuda para
-          desarrollar
-          diferente facetas de su vida, por ejemplo: la lingüística, ya que es lo que nos diferencia de los demás seres.
-          Dentro de la sociedad contamos con estándares de conductas los cuales son criterios que nos permiten
-          establecer
-          patrones adecuados para el actuar de las personas siendo estas diseñadas de acuerdo a la función que cumpla
-          dentro
-          de la sociedad. Dentro de los estándares de conducta se consideran múltiples variables, las cuales las más
-          destacadas
-          son: razones religiosas, étnicas, políticas entre otras.
-        </p>
-      </div>
-      <div>
-        <p>¿Crees que el estado es la institución más universal y poderosa?
-          Fundamenta tu respuesta en 2 razones.
-        </p>
-        <p>Sí, del estado depende el avance como sociedad, ya que este nos representa y sin los poderes
-          que la conforman ni la constitución que se ejerce no habría orden, ni justicia.
-          Se podría decir que sí es la forma de gobierno más extendida en el planeta, inicialmente cuando
-          la civilización es pequeña se podría obviar este tipo de gobierno, cuando la población se hace
-          más extendida es necesario de una institución para el control de las masas poblacionales, lo hace
-          poderoso gracias a la generación de recursos ilimitados por medio del impuesto
-        </p>
-      </div>
+      <img src="./assets/img/2.png" alt="">
     </div>
     <div class="pg-2 SEM1">
-      <div>
-        <p>¿Qué opinas de la afirmación de Aristóteles?</p>
-        <p>Aristóteles indica que el hombre es un animal político, por ende si este no realiza política no
-          piensa en el bien común, ni en su propio beneficio incluso no sueña con un mejor futuro, así que
-          de la política que realizamos depende nuestro bienestar.
-          El ser humano puede elegir entre el bien. También entre lo que es justo o injusto esto se refiere a
-          que como persona elegimos lo que consideramos correcto o no en consideración a su punto de vista
-        </p>
-      </div>
-      <div>
-        <p>Conclusiones</p>
-        <p>Teniendo en cuenta que el hombre como lo indica aristóteles es un ser social, racional y animal
-          debemos saber que el equilibrio de estas esencias determinará su conducta adaptativa dentro de
-          la sociedad, siendo resultado la adquisición de distintas capacidades dentro de las cuales
-          podemos considerar importante la habilidad de un pensar político y filosófico dando apertura a
-          un mayor conocimiento social.
-        </p>
-      </div>
-      <figure class="platon"><img src="./assets/img/Platon.png" alt=""></figure>
-      <figure class="platon"><img src="./assets/img/Platon.png" alt=""></figure>
-      <figure class="platon"><img src="./assets/img/Platon.png" alt=""></figure>
-      <figure class="platon"><img src="./assets/img/Platon.png" alt=""></figure>
-
+      <img src="./assets/img/3.png" alt="">
     </div>
-
     <div class="pg-3 SEM2">
-      <div class="titulo">
-        <p>Las grandes ideas de la atenas democraticas</p>
-      </div>
-      <div>
-        <p>¿Crees que este mito justifica lo que sucede en la política actualmente?</p>
-        <p>
-          El respeto y la justicia son la base para convivir en una buena sociedad para ello todos debemos
-          respetar las normas y leyes que existen; pero como en todo país existen personas que no están
-          de acuerdo con estas leyes; y por ende se realizan protestas sociales que de cierta manera afectan
-          en el ámbito político-económico para evitar que esto se vuelva una crisis política-social, se
-          busca una solución que se da mediante el diálogo entre un representante del estado, ya sea el
-          presidente y el dirigente de esta protesta con el objetivo de llegar a un acuerdo por el bien del
-          país y de esta manera prevalezca la justicia y el respeto en nuestra sociedad.
-
-          <!-- De forma subjetiva quizás mantengan relación, pero siendo objetivos no justifica el estado
-          actual de lo que conocemos como política. El mito hace referencia a acciones subjetivas
-          quitando valor a la verdad objetiva que se manifiesta en hechos como la carencia de recursos,
-          entre los principales accesos libre a la educación, seguridad pública y atención médica. El Perú
-          a nivel estadístico es un país que no brinda los recursos mínimos necesarios, para realizar ese
-          análisis se realiza con datos y evidencias. En estas circunstancias no podemos basarnos en
-          “nuestros sentimientos o pensares” debemos ser objetivos en decir que son problemáticas
-          presentes las cuales no necesariamente se muestran por la presencia o ausencia de ciertas
-          cualidades. -->
-        </p>
-      </div>
-      <div>
-        <p>¿Cómo interpretas la política?</p>
-        <p>
-          En el ámbito político no todos los representantes piensan de la misma manera, un ejemplo sería
-          en el congreso donde se realizan debates para aprobar o denegar una ley donde se plantean
-          diferentes posturas de los representantes del pueblo, quienes buscan agruparse según un partido
-          político o según las personas que están de acuerdo con esta ley; cabe resaltar que dicha ley
-          beneficia a este grupo de personas y muchas veces a la sociedad en general.
-
-          La política determina la creación de leyes y normas al igual que la aplicación de esta con el
-          objetivo de regular distintos actuares del ser humano para poder garantizar una estabilidad y
-          bienestar como comunidad. Por ello debemos tener en cuenta que la política es la encargada
-          de la distribución de valores y principios fundamentales los cuales serán aplicados en asuntos
-          públicos de una sociedad garantizando coexistencia pacífica entre múltiples comunidades.
-
-          <!-- La política como una herramienta de orden social: En la última parte del mito, Zeus dicta una
-          ley que establece que aquellos que no puedan participar del respeto y la justicia deben ser
-          eliminados como una peste social. Esto nos demuestra que la política tiene una función
-          importante en la creación y el mantenimiento del orden social, donde aquellos que no respeten
-          las normas y valores establecidos deben ser castigados para garantizar la coexistencia pacífica
-          en la sociedad. -->
-        </p>
-      </div>
+      <img src="./assets/img/4.png" alt="">
     </div>
-    
     <div class="pg-4 SEM2">
-      <div>
-        <p>Parafrasea la siguiente cita: "Pero me parece que la naturaleza demuestra que no
-          es justo que el que valga más tenga menos que otro que no valga lo que él y el más
-          fuerte menos que el más débil y prueba en mil ocasiones que debe ser así tanto en lo
-          que concierne a los animales como a los mismos hombres, entre los cuales vernos
-          Estados y naciones enteras donde la regla de lo justo es que el más fuerte se imponga
-          al más débil y esté más beneficiado que él". (Platón, Gorgias). </p>
-        <p>
-          Muestra el desbalance que se genera a favor del débil, quitando el valor a aquellos que
-          quizás tengan un valor mayor a lo establecido haciendo referencia de forma indirecta a
-          una sumisión política. Aquellos que merecen la oportunidad no la obtienen y aquellos que
-          no esperan tenerla la consiguen. Esto demuestra que muchas veces la injusticia forma
-          parte de nuestra sociedad, sin embargo, también existe los justo para quiénes valoran el
-          esfuerzo y perseverancia, lo cual hace que se vea reflejado en la prosperidad de esta.
-        </p>
-      </div>
-      <div>
-        <p>¿Qué opinas de la posición de Calicles?</p>
-        <p>
-          Opino que es un pensamiento de acuerdo con su tiempo cuando las leyes sí las escribían
-          los débiles y las grandes masas, ya que en aquellos tiempos si se tomaba en cuenta la voz
-          del pueblo “la voz del pueblo es la voz de dios” y existe una democracia innata y
-          verdadera respetando los principios de igualdad y justicia.
-
-          <!-- ¿La posición de Calicles tiene una posición naturalista, ya que es la regla de los inicios de
-          los seres vivos, donde el más fuerte tiene la supremacía sobre otros, esto ha ayudado a su
-          selección de los mejores especímenes, en la actualidad se sigue dando ya que los más
-          fuertes no dejan de serlo por ejemplo EE. UU. no quiere que nadie lo supere en asuntos
-          de sus intereses y hace todo lo posible para seguir en la supremacía, usando
-          organizaciones o métodos cuestionables. -->
-
-          <!-- Calicles muestra una posición una poco controversial al decir afirmar que la ley es
-          invención de los débiles ya que desde este punto se puede entender dos cosas:
-          - Calicles establece que los débiles limitan el poder y la libertad de los fuertes por
-          miedo a tener que enfrentar una revelación.
-          - Por otro lado, da a entender que no quiere que los fuertes estén por encima de los
-          débiles, solo no quiere un abuso de “poder de los débiles” limitando a los demás para
-          recibir un beneficio a costas de otros.  -->
-        </p>
-      </div>
-        
-      <div>
-        <p>¿De qué manera se evidencia el pensamiento político de él en la actualidad?</p>
-        <p>
-          <!-- En la actualidad, este pensamiento político es visto con una postura autoritaria y
-          antidemocrática, porque evade principios fundamentales de igualdad y justicia que
-          sustentan el sistema político. Además, su visión de la naturaleza humana como jerárquica
-          y competitiva se encuentra en contradicción con la idea de la cooperación y la solidaridad
-          que existe en la actualidad. -->
-
-          En muchos países actualmente se ejerce el partido comunista el cual se piensa que todos
-          deben obtener lo mismo a pesar de los esfuerzos o de los logros obtenidos, esto indica que
-          se ponga en equitativa posición a todos. Sin embargo, en otros países capitalistas aquellos
-          que se esfuerzan por lo que quieren conseguir son los que más reciben, y es lo más justo
-          para todos. Pues aquella persona que está más preparada y se ha esforzado por lograr sus
-          objetivos deben ser aquella que por sus méritos sean recompensados.
-
-          <!-- La corrupción en muchos casos forma parte del poder, ya que muchas personas piensan
-          en su propio beneficio sin pensar en lo que necesita realmente el pueblo. Esto se ve
-          reflejado en la actualidad con los distintos casos de corrupción en el que se ve que
-          aquellos encargados del poder son los que más dañan el país. -->
-        </p>
-      </div>
+      <img src="./assets/img/5.png" alt="">
     </div>
-
     <div class="pg-5 SEM3">
-      <!-- <h2 class="title">SEMANA 1</h2> -->
-      <div class="titulo">
-        <p>Crítica a las ideas democráticas</p>
-      </div>
-      <div>
-        <p>¿Por qué se afirma que el DERECHO ROMANO dejó un legado significativo en
-          materia política, judicial, cultural y social? Justifica tu respuesta utilizando opiniones de
-          historiadores y/o políticos?</p>
-        <p>
-          Según el historiador Arnold Toynbee el derecho romano aportó en su mayoría a los
-          sistemas jurídicos modernos como la creación de códigos civiles y derecho procesal. Además,
-          contribuyó a la idea de justicia para que fuera desarrollada de la misma manera para todos,
-          incluso sin tomar en cuenta el estatus social.
-          En cuanto a su influencia en la política, el derecho romano estableció muchas de las
-          bases que se utilizan en la actualidad en la organización del Estado y en la estructura de poder.
-          Según el historiador francés Émile Chénon, "la organización política de Roma se basó en el
-          derecho, lo que permitió una mayor estabilidad política y social" (Chénon, 1987).
-        </p>
-        <p>
-          ¿Consideras que este dato “Roma fue tolerante a la diversidad de costumbres locales e
-          incluso adaptó para sí algunas de estas costumbres como los cultos religiosos” tenga
-          relación con el pensamiento político romano?</p>
-        <p>
-          Según el historiador Edward Togo Salmón, “el gobierno romano mostró una
-          considerable tolerancia hacia las costumbres y tradiciones de los pueblos conquistados,
-          siempre y cuando no fueran contrarias a la ley romana" (Salmon, 1940). Esto se evidencia en
-          la tolerancia de Roma hacia las religiones de los pueblos conquistados, lo que permitió la
-          preservación de muchas creencias y prácticas religiosas en el Imperio Romano.
-          El historiador Arnaldo Momigliano indica que Roma consideraba a la integración
-          cultural como una manera de poder expandirse y reconfortar su imperio, por lo tanto fue
-          capaz de instituir un sistema de tolerancia y adaptación cultural. Además, con ello pudo evitar
-          la resistencia y rebelión por parte de pueblos subyugados.
-        </p>
-      </div>
+      <img src="./assets/img/6.png" alt="">
     </div>
-
     <div class="pg-6 SEM4">
-      <!-- <h2 class="title">SEMANA 1</h2> -->
-      <div class="titulo">
-        <p>Organización socioplotica del hombre</p>
-      </div>
-      <div>
-        <p>ASDF</p>
-        <p>
-        </p>
-      </div>
+      <img src="./assets/img/7.png" alt="">
     </div>
-
-    <div class="hard"></div>
-    <div class="hard"></div>
+    <div class="pg-7 SEM4">
+      <img src="./assets/img/8.png" alt="">
+    </div>
+    <div class="pg-8 SEM4">
+      <img src="./assets/img/9.png" alt="">
+    </div>
+    <div class="pg-9 SEM4">
+      <img src="./assets/img/10.png" alt="">
+    </div>
+    <div class="pg-10 SEM4">
+      <img src="./assets/img/11.png" alt="">
+    </div>
+    <div class="pg-11 SEM1">
+      <img src="./assets/img/12.png" alt="">
+    </div>
+    <div class="pg-12 SEM1">
+      <img src="./assets/img/13.png" alt="">
+    </div>
+    <div class="pg-13 SEM2">
+      <img src="./assets/img/14.png" alt="">
+    </div>
+    <div class="pg-14 SEM2">
+      <img src="./assets/img/15.png" alt="">
+    </div>
+    <div class="pg-15 SEM3">
+      <img src="./assets/img/16.png" alt="">
+    </div>
+    <div class="pg-16 SEM4">
+      <img src="./assets/img/17.png" alt="">
+    </div>
+    <div class="pg-17 SEM4">
+      <img src="./assets/img/18.png" alt="">
+    </div>
+    <div class="pg-18 SEM4">
+      <img src="./assets/img/19.png" alt="">
+    </div>
+    <div class="pg-19 SEM4">
+      <img src="./assets/img/20.png" alt="">
+    </div>
+      <div class="pg-20 SEM4">
+        <img src="./assets/img/21.png" alt="">
+      </div>
+      <div class="pg-21 SEM1">
+        <img src="./assets/img/22.png" alt="">
+      </div>
+      <div class="pg-22 SEM1">
+        <img src="./assets/img/23.png" alt="">
+      </div>
+      <div class="pg-23 SEM2">
+        <img src="./assets/img/24.png" alt="">
+      </div>
+      <div class="pg-24 SEM2">
+        <img src="./assets/img/25.png" alt="">
+      </div>
+      <div class="pg-25 SEM3">
+        <img src="./assets/img/26.png" alt="">
+      </div>
+      <div class="pg-26 SEM4">
+        <img src="./assets/img/27.png" alt="">
+      </div>
+      <div class="pg-27 SEM4">
+        <img src="./assets/img/28.png" alt="">
+      </div>
+      <div class="pg-28 SEM4">
+        <img src="./assets/img/29.png" alt="">
+      </div>
+      <div class="pg-29 SEM4">
+        <img src="./assets/img/30.png" alt="">
+      </div>
+      <div class="pg-30 SEM4">
+        <img src="./assets/img/31.png" alt="">
+      </div>
+      <div class="pg-31 SEM4">
+        <img src="./assets/img/32.png" alt="">
+      </div>
     </div>
   </div>
-
+<!--<button id="fullscreenButton"><i class="fas fa-expand"></i></button>-->
 </body>
 
 </html>
